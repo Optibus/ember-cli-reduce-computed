@@ -3,7 +3,7 @@ var get = Ember.get;
 var guidFor = Ember.guidFor;
 var addObserver = Ember.addObserver;
 var removeObserver = Ember.removeObserver;
-var forEach = Ember.EnumerableUtils.forEach || function (obj, callback, thisArg) {
+var forEach = function (obj, callback, thisArg) {
     return obj.forEach ? obj.forEach(callback, thisArg) : Array.prototype.forEach.call(obj, callback, thisArg);
 };
 var run = Ember.run;
