@@ -2,7 +2,7 @@ import Ember from 'ember';
 import {
   ReduceComputedProperty
 } from './reduce_computed';
-var o_create = Ember.Object.create;
+var o_create = Object.create;
 var EmberError = Ember.Error;
 
 var a_slice = [].slice;

@@ -10,7 +10,7 @@ var expandProperties = Ember.expandProperties;
 var addObserver = Ember.addObserver;
 var ComputedProperty = Ember.ComputedProperty;
 
-var o_create = Ember.Object.create;
+var o_create = Object.create;
 var forEach = function (obj, callback, thisArg) {
     return obj.forEach ? obj.forEach(callback, thisArg) : Array.prototype.forEach.call(obj, callback, thisArg);
   };
